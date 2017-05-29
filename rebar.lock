@@ -1,6 +1,8 @@
 {"1.1.0",
-[{<<"getopt">>,{pkg,<<"getopt">>,<<"0.8.2">>},0}]}.
+[{<<"getopt">>,{pkg,<<"getopt">>,<<"0.8.2">>},0},
+ {<<"sync">>,{pkg,<<"sync">>,<<"0.1.3">>},0}]}.
 [
 {pkg_hash,[
- {<<"getopt">>, <<"B17556DB683000BA50370B16C0619DF1337E7AF7ECBF7D64FBF8D1D6BCE3109B">>}]}
+ {<<"getopt">>, <<"B17556DB683000BA50370B16C0619DF1337E7AF7ECBF7D64FBF8D1D6BCE3109B">>},
+ {<<"sync">>, <<"C5785FE1311542B76355F403B8E0B35E30DBBEE1F5E89968748CEA4D0A20D289">>}]}
 ].
