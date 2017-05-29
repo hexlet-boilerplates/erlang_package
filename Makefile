@@ -12,3 +12,7 @@ console: compile
 
 release:
 	bin/rebar3 release
+
+cli:
+	./_build/default/bin/cli
+

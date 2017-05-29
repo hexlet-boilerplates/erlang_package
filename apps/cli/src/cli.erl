@@ -12,5 +12,9 @@ main(Args) ->
                  {file,    undefined, undefined, string,                "Output file"}
                 ],
 
-  Result = getopt:parse(OptSpecList, Args),
-  erlang:display("opa!").
+  case Args of
+    [] ->
+      getopt:usage(OptSpecList, "cli");
+    _ ->
+      {ok, Values} = getopt:parse(OptSpecList, Args)
+  end.
