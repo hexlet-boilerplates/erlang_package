@@ -1,0 +1,6 @@
+-sname erlang_package
+
+-setcookie erlang_package_cookie
+
++K true
++A30
