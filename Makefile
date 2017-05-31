@@ -13,6 +13,11 @@ console: compile
 release:
 	bin/rebar3 release
 
+test:
+	bin/rebar3 eunit
+
 cli:
 	./_build/default/bin/cli
+
+.PHONY: test
 
