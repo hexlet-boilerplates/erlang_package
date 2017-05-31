@@ -1,8 +1,8 @@
-install:
-	bin/rebar3 get-deps
-
 compile:
 	bin/rebar3 compile
+
+install:
+	bin/rebar3 get-deps
 
 console: compile
 	bin/rebar3 shell

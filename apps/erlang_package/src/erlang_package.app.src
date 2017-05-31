@@ -8,7 +8,9 @@
     stdlib,
     sync
    ]},
-  {env,[]},
+  {env, [
+         {key, value}
+       ]},
   {modules, []},
 
   {maintainers, []},
