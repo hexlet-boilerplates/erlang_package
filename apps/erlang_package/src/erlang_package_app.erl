@@ -15,7 +15,8 @@
 %%====================================================================
 
 start(_StartType, _StartArgs) ->
-    erlang_package_sup:start_link().
+  lager:info("Hello from app"),
+  erlang_package_sup:start_link().
 
 %%--------------------------------------------------------------------
 stop(_State) ->
