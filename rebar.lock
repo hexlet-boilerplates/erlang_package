@@ -1,7 +1,19 @@
 {"1.1.0",
-[{<<"getopt">>,{pkg,<<"getopt">>,<<"0.8.2">>},0},
+[{<<"cowboy">>,
+  {git,"https://github.com/ninenines/cowboy",
+       {ref,"2ad057ab1c41fe2dffa4138695e8fd8205ee818a"}},
+  0},
+ {<<"cowlib">>,
+  {git,"https://github.com/ninenines/cowlib",
+       {ref,"a636afd8ccb8258fbf24f7ae1d44d174b66cc95b"}},
+  1},
+ {<<"getopt">>,{pkg,<<"getopt">>,<<"0.8.2">>},0},
  {<<"goldrush">>,{pkg,<<"goldrush">>,<<"0.1.9">>},1},
  {<<"lager">>,{pkg,<<"lager">>,<<"3.5.0">>},0},
+ {<<"ranch">>,
+  {git,"https://github.com/ninenines/ranch",
+       {ref,"40809cd2b257a8a53bcb5588ecaa88cc5381ff5c"}},
+  1},
  {<<"sync">>,{pkg,<<"sync">>,<<"0.1.3">>},0}]}.
 [
 {pkg_hash,[

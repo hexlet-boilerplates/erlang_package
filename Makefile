@@ -1,20 +1,35 @@
 compile:
-	bin/rebar3 compile
+	rebar3 compile
 
 install:
-	bin/rebar3 get-deps
+	rebar3 get-deps
 
 console: compile
-	bin/rebar3 shell
+	rebar3 shell
 
 release:
-	bin/rebar3 release
+	rebar3 release
 
 test:
-	bin/rebar3 eunit
+	rebar3 eunit
 
 cli:
 	./_build/default/bin/cli
+
+start:
+	_build/default/rel/erlang_package/bin/erlang_package foreground
+
+compose:
+	docker-compose up
+
+compose-bash:
+	docker-compose run web bash
+
+compose-build:
+	docker-compose build
+
+compose-release:
+	docker-compose run web make release
 
 .PHONY: test
 
