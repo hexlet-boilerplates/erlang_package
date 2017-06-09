@@ -31,5 +31,8 @@ compose-build:
 compose-release:
 	docker-compose run web make release
 
+compose-test:
+	docker-compose run web make test
+
 .PHONY: test
 
